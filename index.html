@@ -3,671 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabrina Zaki Hansen | Cognitive Scientist & AI Consultant</title>
-    <meta name="description" content="Cognitive Scientist and AI Consultant specializing in human-AI interaction, machine learning, and experimental design.">
-    
-    <!-- CSS styles -->
+    <title>Sabrina Zaki Hansen | Cognitive Science & Applied AI</title>
+    <meta name="description" content="Sabrina Zaki Hansen works across cognitive science, applied AI, learning tools, research prototypes, communication, R, Python, NLP, and experimental design.">
     <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
-    <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/profile_pic.jpg" type="image/x-icon">
 </head>
 <body>
-    <!-- Floating Navigation -->
-    <nav class="floating-nav" id="floating-nav">
-        <div class="nav-brand">
-            <span class="brand-text">SZH</span>
-        </div>
-        <ul class="nav-menu" id="nav-menu">
-            <li><a href="#hero" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-toggle" id="nav-toggle">
+    <div class="projector-beam" id="projector-beam" aria-hidden="true"></div>
+    <div class="scroll-meter" id="scroll-meter" aria-hidden="true"></div>
+
+    <nav class="projector-nav" aria-label="Main navigation">
+        <a class="brand" href="#top">SZH</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
-            <span></span>
+        </button>
+        <div class="nav-links" id="nav-menu">
+            <a href="#profile">Profile</a>
+            <a href="#overview">Overview</a>
+            <a href="#projects">Projects</a>
+            <a href="#methods">Methods</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section with Particles -->
-    <section id="hero" class="hero-section">
-        <div class="particles" id="particles"></div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/profile_pic.jpg" alt="Sabrina Zaki Hansen" class="profile-image">
-                    <div class="profile-ring"></div>
+    <main id="top">
+        <section class="frame hero-frame" aria-labelledby="hero-title">
+            <div class="frame-index">00</div>
+            <div class="hero-layout">
+                <div>
+                    <p class="kicker">Cognitive science / applied AI / learning systems</p>
+                    <h1 id="hero-title">Sabrina Zaki Hansen</h1>
+                    <p class="lead">
+                        I build practical tools for making messy material easier to test, learn,
+                        search, and explain.
+                    </p>
                 </div>
+                <aside class="focus-card" aria-label="Profile summary">
+                    <img src="assets/images/profile_pic.jpg" alt="Sabrina Zaki Hansen">
+                    <div class="fact-list">
+                        <div>
+                            <span>Now</span>
+                            <strong>AI Consultant at Gejst Studio</strong>
+                        </div>
+                        <div>
+                            <span>Study</span>
+                            <strong>MSc Cognitive Science, Aarhus University</strong>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <div class="hero-text">
-                <h1 class="hero-name">
-                    <span class="name-part">Sabrina</span>
-                    <span class="name-part">Zaki Hansen</span>
-                </h1>
-                <div class="hero-roles">
-                    <span class="role active">Cognitive Scientist</span>
-                    <span class="role">AI Consultant</span>
-                    <span class="role">Human-AI Interaction Specialist</span>
-                </div>
-                <p class="hero-description">
-                    Exploring the fascinating intersection of human cognition and artificial intelligence, 
-                    one experiment at a time.
+        </section>
+
+        <section class="frame profile-frame" id="profile">
+            <div class="frame-index">01</div>
+            <div class="section-head">
+                <p class="kicker">Profile</p>
+                <h2>Radical optimist.</h2>
+                <p class="lead small">
+                    I like work where technology mediates new experiences: AI safety, robotics-adjacent
+                    research, art-science projects, learning tools, and systems that help people understand
+                    what they are working with.
                 </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="cta-primary">
-                        <span>Let's Connect</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#portfolio" class="cta-secondary">
-                        <span>View My Work</span>
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll to explore</div>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+            <div class="profile-grid">
+                <article data-tags="communication">
+                    <span>Communication</span>
+                    <h3>Direct, positive, structured</h3>
+                    <p>I care a lot about making ideas easier to discuss, test, and hand over.</p>
+                </article>
+                <article data-tags="ai research">
+                    <span>Technology</span>
+                    <h3>Human-AI interaction</h3>
+                    <p>My interest is less “AI for AI's sake” and more what happens when people use it.</p>
+                </article>
+                <article data-tags="learning">
+                    <span>Learning</span>
+                    <h3>Memory and study systems</h3>
+                    <p>Podmem comes from the same question: how do we make learning more active?</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who I Am</span>
-                <h2 class="section-title">About Me</h2>
+        <section class="frame overview-frame" id="overview">
+            <div class="frame-index">02</div>
+            <div class="section-head">
+                <p class="kicker">Overview</p>
+                <h2>What to look at first.</h2>
             </div>
-            
-            <div class="about-grid">
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="lead-text">
-                            I'm currently pursuing a <mark class="highlight">Cand.it in Cognitive Science</mark> at Aarhus University, 
-                            with a deep fascination for how <mark class="highlight">humans</mark> and <mark class="highlight">technology</mark> 
-                            interact—particularly when it comes to how our <mark class="highlight">brains</mark> behave when put in front 
-                            of these cutting-edge tech.
-                        </p>
-                        
-                        <p>
-                            What truly excites me is witnessing how my work can evoke new <mark class="highlight">experiences</mark> in others, 
-                            especially when technology serves as the mediator. In various student work roles, I've explored 
-                            <mark class="highlight">AI safety</mark>, <mark class="highlight">robotics</mark>, and the intersection of research and art, 
-                            helping a research group integrate <mark class="highlight">AI</mark> to expand the possibilities of their projects.
-                        </p>
-                        
-                        <p>
-                            I also co-founded a <mark class="highlight">startup</mark> with two friends, where we experiment with using 
-                            <mark class="highlight">LLMs</mark> to enhance learning and study experiences. Time and again, I'm reminded that 
-                            the intersection of <mark class="highlight">humans and technology</mark> is where I find my creative spark. 
-                            Thanks for taking the time to read!
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="about-visual">
-                    <div class="interest-cloud">
-                        <div class="interest-item" data-category="ai">Machine Learning</div>
-                        <div class="interest-item" data-category="research">Experimental Design</div>
-                        <div class="interest-item" data-category="tech">Python</div>
-                        <div class="interest-item" data-category="ai">NLP</div>
-                        <div class="interest-item" data-category="research">Neuroimaging</div>
-                        <div class="interest-item" data-category="tech">R</div>
-                        <div class="interest-item" data-category="design">UX/UI</div>
-                        <div class="interest-item" data-category="ai">AI Safety</div>
-                        <div class="interest-item" data-category="research">Data Science</div>
-                    </div>
-                </div>
+            <div class="lens-grid" id="lens-grid" aria-label="Portfolio overview lenses">
+                <button class="lens active" type="button" data-lens="all">
+                    <span>Everything</span>
+                    <strong>Full portfolio map</strong>
+                </button>
+                <button class="lens" type="button" data-lens="ai">
+                    <span>AI</span>
+                    <strong>RAG, LLMs, Python, prototypes</strong>
+                </button>
+                <button class="lens" type="button" data-lens="learning">
+                    <span>Learning</span>
+                    <strong>Flashcards, memory, teaching</strong>
+                </button>
+                <button class="lens" type="button" data-lens="research">
+                    <span>Research</span>
+                    <strong>Experiments, stats, neuroimaging</strong>
+                </button>
+                <button class="lens" type="button" data-lens="communication">
+                    <span>Communication</span>
+                    <strong>Clear structure across people + systems</strong>
+                </button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What I Do</span>
-                <h2 class="section-title">Skills & Expertise</h2>
+        <section class="frame projects-frame" id="projects">
+            <div class="frame-index">03</div>
+            <div class="section-head">
+                <p class="kicker">Project evidence</p>
+                <h2>Built work.</h2>
             </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
+            <div class="projector-grid">
+                <article class="project-slide large" data-tags="ai research communication">
+                    <div class="slide-media">
+                        <img src="assets/images/botcon.png" alt="Chatbot Clairvoyant screenshot">
                     </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">R</span>
-                                <span class="skill-level">99%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="99"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-level">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Web Development (HTML, CSS, JavaScript, SQL, Figma)</span>
-                                <span class="skill-level">45%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="45"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>AI & Machine Learning</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Machine Learning & NLP</span>
-                                <span class="skill-level">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Statistics, Data Science and Prediction</span>
-                                <span class="skill-level">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-microscope"></i>
-                        <h3>Research</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Experimental Design and Analysis</span>
-                                <span class="skill-level">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Neuroimaging and Analysis</span>
-                                <span class="skill-level">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-palette"></i>
-                        <h3>Design & Innovation</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">UX/UI Design</span>
-                                <span class="skill-level">45%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="45"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">3D Printing and Design</span>
-                                <span class="skill-level">40%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="40"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Resume Section -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Journey</span>
-                <h2 class="section-title">Education</h2>
-            </div>
-            
-            <div class="education-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker featured"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">August 2024 - Present</div>
-                            <h4>Master's in Cognitive Science</h4>
-                            <p><em>Aarhus University</em></p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">September 2021 - June 2024</div>
-                            <h4>Bachelor's in Cognitive Science</h4>
-                            <p><em>Aarhus University</em></p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">August 2018 - June 2021</div>
-                            <h4>Higher Technical Exam</h4>
-                            <p><em>EUC Syd</em></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Career Journey</span>
-                <h2 class="section-title">Experience & Impact</h2>
-                <p class="section-subtitle">Where I've contributed, learned, and made a difference</p>
-            </div>
-            
-            <div class="experience-dual-columns">
-                <!-- Professional Work -->
-                <div class="work-section">
-                    <h3 class="work-section-title">Professional Work</h3>
-                    <div class="timeline-scroll-container">
-                        <div class="timeline compact">
-                            <div class="timeline-item">
-                                <div class="timeline-marker featured"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">April 2025 - Present</div>
-                                    <h4>AI Consultant</h4>
-                                    <p><em>Gejst Studio</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">March 2024 - Present</div>
-                                    <h4>IT Employee</h4>
-                                    <p><em>Aarhus University, Interacting Minds Center for Experimenting, Experiencing and Reflecting</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">February 2024 - Present</div>
-                                    <h4>Co-founder</h4>
-                                    <p><em>Startup project, turning anything into flashcards using LLMs</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2024</div>
-                                    <h4>Conference Staff</h4>
-                                    <p><em>Aarhus University, Research Unit for Robophilosophy and Integrative Social Robotics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">May 2023 - December 2023</div>
-                                    <h4>Research Assistant</h4>
-                                    <p><em>Aarhus University, Research Unit for Robophilosophy and Integrative Social Robotics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2023 - December 2023</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>Facilitated weekly classes in the course in Cognition and Communication, as well as doing exam supervision for student's exam projects</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2022 - December 2022</div>
-                                    <h4>Research Assistant</h4>
-                                    <p><em>Apart Research, AI-Safety Non-profit</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2022 - April 2023</div>
-                                    <h4>Community Manager</h4>
-                                    <p><em>Apart Research, AI-Safety Non-profit</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2022 - December 2022</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>Facilitated weekly classes in the course in Cognition and Communication, as well as doing exam supervision for student's exam projects</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2020 - August 2021</div>
-                                    <h4>Mentor</h4>
-                                    <p><em>MentorDanmark - teaching danish, english and mathematics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2020 - June 2021</div>
-                                    <h4>Communications Assistant</h4>
-                                    <p><em>EUC Syd</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2020 - June 2021</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>EUC Syd, Higher Technical Exam</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2020 - December 2020</div>
-                                    <h4>Substitute Teacher</h4>
-                                    <p><em>Aabenraa Friskole</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2020 - December 2020</div>
-                                    <h4>Student Teacher in Mathematics</h4>
-                                    <p><em>SOSO Syd, providing evening classes for students with dyscalculia and other mathematical challenges</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">May 2017 - November 2018</div>
-                                    <h4>Customer Service and Payment</h4>
-                                    <p><em>Bylderup Bov Pizza & Grill</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2016 - May 2017</div>
-                                    <h4>Customer Service and Payment</h4>
-                                    <p><em>Milano Pizza & Restaurant</em></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Experience -->
-                <div class="volunteer-section">
-                    <h3 class="work-section-title">Volunteer Experience</h3>
-                    <div class="timeline-scroll-container">
-                        <div class="timeline compact">
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">March 2022 - February 2024</div>
-                                    <h4>Chairperson</h4>
-                                    <p><em>For the student council for Cognitive Science and Linguistics at Aarhus University</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">February 2023 - October 2023</div>
-                                    <h4>Head Tutor</h4>
-                                    <p><em>Volunteering in being head of planning of the orientation week and cabin trip for the new Bachelor students of Cognitive Science 2023</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2022 - June 2023</div>
-                                    <h4>Mentor</h4>
-                                    <p><em>Volunteering for Aarhus University</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">April 2022 - October 2023</div>
-                                    <h4>Tutor</h4>
-                                    <p><em>Volunteering in being part of a team planning of the orientation week and cabin trip for the new Bachelor students of Cognitive Science 2022</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2019 - January 2023</div>
-                                    <h4>Head of Marketing Communications</h4>
-                                    <p><em>Volunteering for Campusbyen Aabenraa</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">January 2019 - January 2023</div>
-                                    <h4>Youth Counselor</h4>
-                                    <p><em>Headspace Denmark, Aabenraa</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">January 2018 - June 2020</div>
-                                    <h4>Member of the Management Board</h4>
-                                    <p><em>EUC Syd, student representative for Higher Technical Exam</em></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <img src="assets/images/botcon.png" alt="Chatbot Clairvoyant" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://botcon.ploomberapp.io/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">AI Research Tool</div>
+                    <div class="slide-copy">
+                        <p class="meta">AI research tool / Python / Streamlit / RAG</p>
                         <h3>Chatbot Clairvoyant</h3>
-                        <p>LLM using RAG with vectorstore made for the "Experimenting, Experiencing, Reflecting" art–science research group implemented in Streamlit.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                            <span>RAG</span>
-                            <span>LLM</span>
-                        </div>
+                        <p>
+                            A RAG-based chatbot with vector storage for the Experimenting, Experiencing,
+                            Reflecting art-science research group. Built to make project material easier
+                            to query and reuse.
+                        </p>
+                        <a href="https://botcon.ploomberapp.io/" target="_blank" rel="noreferrer">Open project</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/podmem.png" alt="Flashcard Generator" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://www.podmem.com/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
+                <article class="project-slide" data-tags="ai learning">
+                    <div class="slide-media">
+                        <img src="assets/images/podmem.png" alt="Podmem flashcard generator screenshot">
                     </div>
-                    <div class="project-content">
-                        <div class="project-category">EdTech Startup</div>
-                        <h3>Flashcard Generator</h3>
-                        <p>Start-up developing an application for generating flashcards from anything. Demo YouTube to flashcards.</p>
-                        <div class="project-tech">
-                            <span>AI/ML</span>
-                            <span>NLP</span>
-                            <span>Web Dev</span>
-                            <span>Startup</span>
-                        </div>
+                    <div class="slide-copy">
+                        <p class="meta">EdTech startup / LLMs / NLP</p>
+                        <h3>Podmem</h3>
+                        <p>
+                            Co-founded a startup project that uses LLMs to turn content into flashcards,
+                            moving students from passive material to active recall.
+                        </p>
+                        <a href="https://www.podmem.com/" target="_blank" rel="noreferrer">Open project</a>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Work Together</h2>
+        <section class="frame methods-frame" id="methods">
+            <div class="frame-index">04</div>
+            <div class="section-head">
+                <p class="kicker">Methods</p>
+                <h2>Skills, but as instruments.</h2>
             </div>
-            
+            <div class="method-grid">
+                <article data-tags="ai">
+                    <span>01</span>
+                    <h3>Build AI prototypes</h3>
+                    <p>Python, machine learning, NLP, RAG, LLMs, Streamlit, and applied AI workflows.</p>
+                </article>
+                <article data-tags="research">
+                    <span>02</span>
+                    <h3>Design experiments</h3>
+                    <p>R, statistics, prediction, experimental design, analysis, data science, and neuroimaging.</p>
+                </article>
+                <article data-tags="learning communication">
+                    <span>03</span>
+                    <h3>Make learning concrete</h3>
+                    <p>Flashcards, active recall, teaching assistance, mentoring, and cognition + communication.</p>
+                </article>
+                <article data-tags="communication">
+                    <span>04</span>
+                    <h3>Keep systems understandable</h3>
+                    <p>Direct communication, clear structure, user-facing explanations, and team coordination.</p>
+                </article>
+                <article data-tags="ai communication">
+                    <span>05</span>
+                    <h3>Shape interfaces</h3>
+                    <p>Web development, HTML/CSS/JavaScript, SQL, Figma, UX/UI, and prototype-level product thinking.</p>
+                </article>
+                <article data-tags="research learning">
+                    <span>06</span>
+                    <h3>Build physical/digital things</h3>
+                    <p>3D printing and design, conference/research support, and hands-on experimentation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="frame timeline-frame" id="timeline">
+            <div class="frame-index">05</div>
+            <div class="section-head">
+                <p class="kicker">Timeline</p>
+                <h2>Work and volunteer log.</h2>
+            </div>
+            <p class="timeline-label">Professional / education</p>
+            <div class="timeline-list">
+                <article data-tags="ai communication">
+                    <time>2025 - now</time>
+                    <h3>AI Consultant</h3>
+                    <p>Gejst Studio</p>
+                </article>
+                <article data-tags="research">
+                    <time>2024 - now</time>
+                    <h3>MSc Cognitive Science</h3>
+                    <p>Aarhus University</p>
+                </article>
+                <article data-tags="research ai">
+                    <time>2024 - now</time>
+                    <h3>IT Employee</h3>
+                    <p>Interacting Minds Center, Aarhus University</p>
+                </article>
+                <article data-tags="ai learning">
+                    <time>2024 - now</time>
+                    <h3>Co-founder</h3>
+                    <p>LLM flashcard startup project</p>
+                </article>
+                <article data-tags="research">
+                    <time>2023</time>
+                    <h3>Research Assistant</h3>
+                    <p>Robophilosophy and Integrative Social Robotics</p>
+                </article>
+                <article data-tags="communication learning">
+                    <time>2022 - 2024</time>
+                    <h3>Chairperson</h3>
+                    <p>Student council for Cognitive Science and Linguistics</p>
+                </article>
+                <article data-tags="ai research">
+                    <time>2022</time>
+                    <h3>Research Assistant</h3>
+                    <p>Apart Research, AI Safety non-profit</p>
+                </article>
+                <article data-tags="research">
+                    <time>2021 - 2024</time>
+                    <h3>BSc Cognitive Science</h3>
+                    <p>Aarhus University</p>
+                </article>
+            </div>
+            <p class="timeline-label">Volunteer work</p>
+            <div class="timeline-list volunteer-list">
+                <article data-tags="communication learning">
+                    <time>2022 - 2024</time>
+                    <h3>Chairperson</h3>
+                    <p>Student council for Cognitive Science and Linguistics, Aarhus University</p>
+                </article>
+                <article data-tags="communication learning">
+                    <time>2023</time>
+                    <h3>Head Tutor</h3>
+                    <p>Planning orientation week and cabin trip for new Cognitive Science students</p>
+                </article>
+                <article data-tags="communication learning">
+                    <time>2022 - 2023</time>
+                    <h3>Mentor + Tutor</h3>
+                    <p>Volunteer mentoring and intro-week planning at Aarhus University</p>
+                </article>
+                <article data-tags="communication">
+                    <time>2019 - 2023</time>
+                    <h3>Head of Marketing Communications</h3>
+                    <p>Campusbyen Aabenraa</p>
+                </article>
+                <article data-tags="communication">
+                    <time>2019 - 2023</time>
+                    <h3>Youth Counselor</h3>
+                    <p>Headspace Denmark, Aabenraa</p>
+                </article>
+                <article data-tags="communication">
+                    <time>2018 - 2020</time>
+                    <h3>Management Board Member</h3>
+                    <p>EUC Syd, student representative for Higher Technical Exam</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="frame contact-frame" id="contact">
+            <div class="frame-index">06</div>
+            <div class="section-head">
+                <p class="kicker">Contact</p>
+                <h2>Start with the material.</h2>
+                <p class="lead small">
+                    If you have a messy dataset, research archive, learning flow, AI workflow,
+                    or prototype idea, I am interested in making it clearer and testable.
+                </p>
+            </div>
             <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Ready to collaborate?</h3>
-                    <p>I'm always interested in new opportunities, innovative projects, and meaningful conversations about the intersection of human cognition and AI.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:szhsabrina@gmail.com">szhsabrina@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/sabrinazakihansen" target="_blank">sabrinazakihansen</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/sabszh" target="_blank">sabszh</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formsubmit.co/8005be62d9b5293e84b5c257f5f64765" method="POST">
-                        <input type="hidden" name="_subject" value="New Portfolio Contact!">
-                        <input type="hidden" name="_captcha" value="false">
-                        
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+                <a href="mailto:szhsabrina@gmail.com">szhsabrina@gmail.com</a>
+                <a href="https://linkedin.com/in/sabrinazakihansen" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/sabszh" target="_blank" rel="noreferrer">GitHub</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Sabrina Zaki Hansen</h3>
-                    <p>Cognitive Scientist & AI Consultant</p>
-                </div>
-                
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/sabrinazakihansen" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/sabszh" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:szhsabrina@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sabrina Zaki Hansen. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
