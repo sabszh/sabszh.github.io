@@ -1,673 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabrina Zaki Hansen | Cognitive Scientist & AI Consultant</title>
-    <meta name="description" content="Cognitive Scientist and AI Consultant specializing in human-AI interaction, machine learning, and experimental design.">
-    
-    <!-- CSS styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/profile_pic.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabrina Zaki Hansen is a Cognitive Scientist and Human-AI Researcher exploring how friction can create more meaningful interactions with technology.">
+  <title>PhD Student — Human-AI Researcher | PhD Fellow @ Gejst Studio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>.about{grid-template-columns:2fr 1fr}.hero-role{font-size:clamp(1.1rem,2vw,1.5rem);font-weight:700;letter-spacing:-.04em;margin:0 0 1.2rem}.hero-role span{font-family:var(--mono);font-weight:400;color:var(--muted)}.site-header{position:sticky;top:0;background:rgba(241,239,233,.94);backdrop-filter:blur(12px)}.hero-note a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.hero-note a:hover{opacity:.6}.portrait-frame{position:relative;--mx:50%;--my:50%;--reveal-size:0px}.portrait-frame:after{content:'';position:absolute;inset:1rem 1rem 3.4rem;background:url('../images/profile_pic.jpg') center/cover no-repeat;clip-path:circle(var(--reveal-size) at var(--mx) var(--my));pointer-events:none;z-index:1}@media(min-width:761px){.project-card{position:sticky;top:100px}.project-card:nth-child(2){top:124px}.project-card:nth-child(3){top:148px}.project-card:nth-child(4){top:172px}}.project-card:hover .project-art{filter:saturate(1.15)}.journey-row{position:relative}.journey-row:nth-child(2):before,.journey-row:nth-child(3):before{content:'';position:absolute;left:-1.1rem;top:1.9rem;width:7px;height:7px;border-radius:50%}.journey-row:nth-child(2):before{background:var(--lime)}.journey-row:nth-child(3):before{background:var(--coral)}.cv-section:nth-child(2) h3:after,.cv-section:nth-child(3) h3:after{content:'';display:inline-block;width:2.4rem;height:.35rem;margin-left:.7rem;vertical-align:middle}.cv-section:nth-child(2) h3:after{background:var(--blue)}.cv-section:nth-child(3) h3:after{background:var(--lime)}.research-fold{border-top:1px solid var(--ink);margin-top:1.2rem}.research-fold summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;padding:1.2rem 0;font-size:1.05rem;font-weight:700;letter-spacing:-.03em}.research-fold summary::-webkit-details-marker{display:none}.research-fold summary span{font-family:var(--mono);font-size:1.4rem;font-weight:400;transition:transform .2s}.research-fold[open] summary span{transform:rotate(45deg)}.research-fold-content{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:0 0 1.8rem;color:var(--muted);font-size:.84rem}.research-fold-content strong{display:block;color:var(--ink);font-size:.7rem;font-family:var(--mono);text-transform:uppercase;margin-bottom:.5rem}@media(max-width:760px){.research-fold-content{grid-template-columns:1fr;gap:1rem}.journey-row:nth-child(2):before,.journey-row:nth-child(3):before{left:-.65rem}.cv-section:nth-child(2) h3:after,.cv-section:nth-child(3) h3:after{width:1.5rem;margin-left:.45rem}}</style>
+  <style>.project-art{display:flex;align-items:center;justify-content:center}.project-art img{display:block;width:100%;height:100%;object-fit:contain;padding:1.5rem;transition:transform .35s ease}.project-card:hover .project-art img{transform:scale(1.035)}.archive-cta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:1.2rem 0;margin-top:1.2rem;font-size:.9rem;font-weight:700}.archive-cta span{font-family:var(--mono);font-size:1.2rem}.archive-cta:hover{opacity:.6}</style>
+  <style>.previous-work{border-top:1px solid var(--line);margin-top:5rem;padding-top:3rem}.previous-work h3{font-size:clamp(1.8rem,3vw,2.8rem);letter-spacing:-.06em;margin:0}.previous-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.previous-grid a{border:1px solid var(--line);padding:1.2rem;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between}.previous-grid a:hover{color:var(--ink);border-color:var(--ink)}@media(max-width:760px){.previous-work{margin-top:3.5rem;padding-top:2.2rem}.previous-grid{grid-template-columns:1fr}}</style>
+  <style>.cv-block{border-top:1px solid var(--ink);margin-top:5rem;padding-top:2rem}.cv-heading{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;margin-bottom:1rem}.cv-heading h3{font-size:1.5rem;letter-spacing:-.05em;margin:0}.cv-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.cv-list>div{display:grid;grid-template-columns:100px 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);font-size:.8rem}.cv-list span{font-family:var(--mono);font-size:.65rem;color:var(--muted)}.cv-list p{margin:0;color:var(--muted)}@media(max-width:760px){.cv-heading{display:block}.cv-heading .text-link{margin-top:1rem;display:inline-block}.cv-list{grid-template-columns:1fr}.cv-list>div{grid-template-columns:80px 1fr}}</style>
+  <style>.cv-block{display:none}.cv-sections{border-top:1px solid var(--ink);margin-top:5rem;padding-top:2.5rem}.cv-section{border-bottom:1px solid var(--line);padding:0 0 2rem;margin-bottom:2rem}.cv-section h3{font-size:clamp(1.8rem,3vw,2.8rem);letter-spacing:-.06em;margin:0 0 1.5rem}.cv-section-list{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}.cv-section-list>div{display:grid;grid-template-columns:110px 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);font-size:.82rem}.cv-section-list span{font-family:var(--mono);font-size:.65rem;color:var(--muted)}.cv-section-list p{margin:0;color:var(--muted)}.cv-section-list strong{color:var(--ink);font-weight:700}.cv-section-list small{display:block;color:var(--muted);line-height:1.45;margin-top:.3rem;font-size:.75rem}@media(max-width:760px){.cv-section-list{grid-template-columns:1fr}.cv-section-list>div{grid-template-columns:85px 1fr}}
+  </style>
+  <style>.journey{padding-bottom:clamp(3rem,6vw,5rem)}</style>
+  <style>.portrait-frame:after{transition:clip-path .12s ease}.portrait-frame:hover:after{--reveal-size:96px}.journey{position:relative;overflow:hidden}.journey:before{content:'';position:absolute;width:340px;height:210px;right:-80px;top:140px;border:1px solid var(--lime);border-radius:50%;transform:rotate(-18deg);opacity:.85}.journey:after{content:'';position:absolute;width:110px;height:110px;right:90px;top:300px;border:1px solid var(--blue);transform:rotate(28deg);opacity:.8}.journey>*{position:relative;z-index:1}.journey-row:nth-child(2):before,.journey-row:nth-child(3):before,.cv-section:nth-child(2) h3:after,.cv-section:nth-child(3) h3:after{display:none!important}@media(max-width:760px){.journey:before{right:-180px;top:180px}.journey:after{right:24px;top:360px}}</style>
+  <style>.portrait-frame:after{clip-path:none;-webkit-mask-image:radial-gradient(circle var(--reveal-size) at var(--mx) var(--my),#000 0 99%,transparent 100%);mask-image:radial-gradient(circle var(--reveal-size) at var(--mx) var(--my),#000 0 99%,transparent 100%);filter:saturate(1.15);transition:-webkit-mask-image .12s ease,mask-image .12s ease}.work,.about{position:relative;overflow:hidden}.work:before,.about:before{content:'';position:absolute;pointer-events:none;z-index:0}.work:before{width:260px;height:260px;left:-120px;bottom:10%;background:var(--blue);opacity:.16;border-radius:42% 58% 55% 45%;transform:rotate(22deg)}.about:before{width:180px;height:180px;right:9%;top:12%;background:var(--coral);opacity:.12;border-radius:50%;transform:rotate(-16deg)}.work>* ,.about>*{position:relative;z-index:1}.journey:after{background:var(--blue);background-clip:padding-box;opacity:.12}@media(max-width:760px){.work:before{left:-150px}.about:before{right:-40px}}</style>
+  <style>.cv-sections{margin-top:2rem;border-top-color:var(--line)}.cv-section{border-bottom:0;margin-bottom:2.5rem}.cv-section:first-child{position:relative}.cv-section:first-child>.text-link{position:absolute;right:0;top:.35rem}.cv-section-heading{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1.5rem}.cv-section-heading h3{margin:0}@media(max-width:760px){.cv-section:first-child>.text-link{position:static;display:inline-block;margin-bottom:1.25rem}.cv-section-heading{display:block}.cv-section-heading .text-link{display:inline-block;margin-top:.75rem}}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/profile_pic.jpg" type="image/jpeg">
 </head>
 <body>
-    <!-- Floating Navigation -->
-    <nav class="floating-nav" id="floating-nav">
-        <div class="nav-brand">
-            <span class="brand-text">SZH</span>
-        </div>
-        <ul class="nav-menu" id="nav-menu">
-            <li><a href="#hero" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-toggle" id="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Sabrina Zaki Hansen home"><span class="brand-mark">SZH</span><span>Sabrina Zaki Hansen</span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#journey">Journey</a><a href="writing.html">Slowdown</a><a href="#contact">Contact</a></nav>
+    <a class="header-link" href="https://www.linkedin.com/in/sabrinazakihansen" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
 
-    <!-- Hero Section with Particles -->
-    <section id="hero" class="hero-section">
-        <div class="particles" id="particles"></div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-image-wrapper">
-                    <img src="assets/images/profile_pic.jpg" alt="Sabrina Zaki Hansen" class="profile-image">
-                    <div class="profile-ring"></div>
-                </div>
-            </div>
-            <div class="hero-text">
-                <h1 class="hero-name">
-                    <span class="name-part">Sabrina</span>
-                    <span class="name-part">Zaki Hansen</span>
-                </h1>
-                <div class="hero-roles">
-                    <span class="role active">Cognitive Scientist</span>
-                    <span class="role">AI Consultant</span>
-                    <span class="role">Human-AI Interaction Specialist</span>
-                </div>
-                <p class="hero-description">
-                    Exploring the fascinating intersection of human cognition and artificial intelligence, 
-                    one experiment at a time.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="cta-primary">
-                        <span>Let's Connect</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#portfolio" class="cta-secondary">
-                        <span>View My Work</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll to explore</div>
-            <div class="scroll-arrow"></div>
-        </div>
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">PhD Student</h1>
+        <p class="hero-role">Human-AI Researcher <span>|</span> PhD Fellow @ Gejst Studio</p>
+        <p class="hero-intro">I’m a Cognitive Scientist and, at core, a radical optimist. I’m endlessly curious about how we interact with emerging technologies — and how friction might help us create more meaningful relationships with them.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#work">Explore selected work <span>↓</span></a><a class="text-link" href="mailto:szhsabrina@gmail.com">Let’s talk <span>↗</span></a></div>
+      </div>
+      <div class="hero-aside"><div class="portrait-frame"><img src="assets/images/profile_pic.jpg" alt="Portrait of Sabrina Zaki Hansen"></div><div class="hero-note"><span class="mono-label">NOW / 01</span><p><a href="https://phd.au.dk/" target="_blank" rel="noreferrer">PhD Student @ Aarhus University</a><br><a href="https://gejststudio.com/en/" target="_blank" rel="noreferrer">Human-AI Researcher | PhD Fellow @ Gejst Studio</a></p></div></div>
+      <div class="hero-meta"><span class="mono-label">BASED IN</span><span>Aarhus, Denmark</span><span class="meta-line"></span><span class="mono-label">FOCUS</span><span>Research · AI · Design</span></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who I Am</span>
-                <h2 class="section-title">About Me</h2>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="lead-text">
-                            I'm currently pursuing a <mark class="highlight">Cand.it in Cognitive Science</mark> at Aarhus University, 
-                            with a deep fascination for how <mark class="highlight">humans</mark> and <mark class="highlight">technology</mark> 
-                            interact—particularly when it comes to how our <mark class="highlight">brains</mark> behave when put in front 
-                            of these cutting-edge tech.
-                        </p>
-                        
-                        <p>
-                            What truly excites me is witnessing how my work can evoke new <mark class="highlight">experiences</mark> in others, 
-                            especially when technology serves as the mediator. In various student work roles, I've explored 
-                            <mark class="highlight">AI safety</mark>, <mark class="highlight">robotics</mark>, and the intersection of research and art, 
-                            helping a research group integrate <mark class="highlight">AI</mark> to expand the possibilities of their projects.
-                        </p>
-                        
-                        <p>
-                            I also co-founded a <mark class="highlight">startup</mark> with two friends, where we experiment with using 
-                            <mark class="highlight">LLMs</mark> to enhance learning and study experiences. Time and again, I'm reminded that 
-                            the intersection of <mark class="highlight">humans and technology</mark> is where I find my creative spark. 
-                            Thanks for taking the time to read!
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="about-visual">
-                    <div class="interest-cloud">
-                        <div class="interest-item" data-category="ai">Machine Learning</div>
-                        <div class="interest-item" data-category="research">Experimental Design</div>
-                        <div class="interest-item" data-category="tech">Python</div>
-                        <div class="interest-item" data-category="ai">NLP</div>
-                        <div class="interest-item" data-category="research">Neuroimaging</div>
-                        <div class="interest-item" data-category="tech">R</div>
-                        <div class="interest-item" data-category="design">UX/UI</div>
-                        <div class="interest-item" data-category="ai">AI Safety</div>
-                        <div class="interest-item" data-category="research">Data Science</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="work" class="work section-shell" aria-labelledby="work-title">
+      <div class="section-heading"><div><h2 id="work-title">Selected projects.</h2></div></div>
+      <div class="project-grid">
+        <a class="project-card project-card--lime" href="projects/bigswitch.html"><div class="project-art art-switch"><img src="assets/images/project-bigswitch.svg" alt="Abstract switch illustration" loading="lazy"></div><div class="project-details"><div><p class="project-type">Digital sovereignty</p><h3>BigSwitch.eu</h3></div><span class="project-arrow">↗</span><p>A community-driven directory for GDPR-compliant, European-owned alternatives to Big Tech.</p><div class="tags"><span>Web</span><span>Open source</span><span>EU tech</span></div></div></a>
+        <a class="project-card project-card--ink" href="projects/syntag.html"><div class="project-art art-syntag"><img src="assets/images/project-syntag.svg" alt="Abstract document and disclosure tag illustration" loading="lazy"></div><div class="project-details"><div><p class="project-type">Privacy-first tool</p><h3>Syntag.eu</h3></div><span class="project-arrow">↗</span><p>A browser-based tool for adding AI disclosure labels to images, video, audio, PDFs and ZIP files without uploading them.</p><div class="tags"><span>Web</span><span>Privacy</span><span>AI literacy</span></div></div></a>
+        <a class="project-card project-card--coral" href="https://github.com/sabszh/human-things" target="_blank" rel="noreferrer"><div class="project-art art-bot"><img src="assets/images/project-human-things.svg" alt="Abstract human similarity illustration" loading="lazy"></div><div class="project-details"><div><p class="project-type">Cognitive science · ML</p><h3>Human Things</h3></div><span class="project-arrow">↗</span><p>Exploring whether human similarity judgements can improve machine-vision embeddings.</p><div class="tags"><span>Python</span><span>Vision</span><span>Research</span></div></div></a>
+        <a class="project-card project-card--blue" href="https://github.com/sabszh/DataSwipe" target="_blank" rel="noreferrer"><div class="project-art art-podmem"><img src="assets/images/project-dataswipe.svg" alt="Abstract dataset card illustration" loading="lazy"></div><div class="project-details"><div><p class="project-type">Data · Interaction</p><h3>DataSwipe</h3></div><span class="project-arrow">↗</span><p>A card-deck interface for finding datasets in the Data Is Plural archive.</p><div class="tags"><span>JavaScript</span><span>Data</span><span>Interface</span></div></div></a>
+      </div>
+      <a class="archive-cta" href="projects.html">See all public projects and experiments <span>↗</span></a>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What I Do</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">R</span>
-                                <span class="skill-level">99%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="99"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-level">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Web Development (HTML, CSS, JavaScript, SQL, Figma)</span>
-                                <span class="skill-level">45%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="45"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="about" class="about section-shell" aria-labelledby="about-title"><div class="about-copy"><h2 id="about-title">The interesting part is always the space <em>between</em>.</h2><p>I’m Sabrina, a Cognitive Scientist and, at core, a radical optimist. I’m endlessly curious about how we interact with emerging technologies. I love digging into complex problems, making sense of mess, and building things through code, communities and ideas.</p><p>I’ve come to learn that our engagement with frictionless technology may do us more harm than good — especially in our interactions with language models. My PhD, <em>(Don’t) Make Me Think: Designing Reflective Friction to Regulate Epistemic Engagement and Reliance in LLM-Mediated Knowledge Work</em>, explores how friction might serve a more meaningful interaction with technology.</p><p class="about-personal">I live with fibromyalgia, so my body is constantly receiving pain signals. It has taught me (and forced me) to pay attention to pace: when to keep going, and when to slow down. That is also part of why I’m interested in slowing down how we use AI. I worry about what frictionless systems can do to human cognition, and I think this is a critical moment in time when we need to work on this. Innovate new ways.</p></div><div class="about-stamp">HUMANS<br>FIRST<span>✳</span></div></section>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>AI & Machine Learning</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Machine Learning & NLP</span>
-                                <span class="skill-level">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Statistics, Data Science and Prediction</span>
-                                <span class="skill-level">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="journey" class="journey section-shell" aria-labelledby="journey-title"><div class="section-heading"><div><h2 id="journey-title">Highlights.</h2></div></div><div class="journey-list"><div class="journey-row"><span class="year">2026—now</span><div><h3>PhD Student · Aarhus University</h3><p><em>(Don’t) Make Me Think</em>: designing reflective friction to regulate epistemic engagement and reliance in LLM-mediated knowledge work.</p></div><span class="row-index">01</span></div><div class="journey-row"><span class="year">2026—now</span><div><h3>PhD Fellow · Gejst Studio</h3><p>Research internship alongside the PhD, gathering empirical insights and data about how people work with emerging technology. Before this, I worked with Gejst as an AI Consultant (2025—26).</p></div><span class="row-index">02</span></div><div class="journey-row"><span class="year">2022—25</span><div><h3>Research, teaching and facilitation</h3><p>Research and teaching across cognitive science, robotics and social robotics; building tools for the EER art–science group and contributing to Apart Research.</p></div><span class="row-index">03</span></div></div><div class="cv-block"><div class="cv-heading"><h3>Curriculum vitae</h3><a class="text-link" href="https://www.linkedin.com/in/sabrinazakihansen" target="_blank" rel="noreferrer">Full profile on LinkedIn ↗</a></div><div class="cv-list"><div><span>2025—now</span><p>Group Facilitator · Aarhus University</p></div><div><span>2024—25</span><p>IT-medarbejder · EER, Aarhus University</p></div><div><span>2023—24</span><p>Research Assistant · Research Unit for Robophilosophy and Integrative Social Robotics</p></div><div><span>2023</span><p>Teacher Assistant · Cognition and Communication<br>Head Tutor · Cognitive Science</p></div><div><span>2024—27</span><p>MSc Cognitive Science · Aarhus University</p></div><div><span>2021—24</span><p>BSc Cognitive Science · Aarhus University</p></div><div><span>2017—20</span><p>Technical Gymnasium</p></div></div></div></section>
 
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-microscope"></i>
-                        <h3>Research</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Experimental Design and Analysis</span>
-                                <span class="skill-level">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Neuroimaging and Analysis</span>
-                                <span class="skill-level">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="65"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-palette"></i>
-                        <h3>Design & Innovation</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">UX/UI Design</span>
-                                <span class="skill-level">45%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="45"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">3D Printing and Design</span>
-                                <span class="skill-level">40%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="40"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Resume Section -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Journey</span>
-                <h2 class="section-title">Education</h2>
-            </div>
-            
-            <div class="education-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker featured"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">August 2024 - Present</div>
-                            <h4>Master's in Cognitive Science</h4>
-                            <p><em>Aarhus University</em></p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">September 2021 - June 2024</div>
-                            <h4>Bachelor's in Cognitive Science</h4>
-                            <p><em>Aarhus University</em></p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">August 2018 - June 2021</div>
-                            <h4>Higher Technical Exam</h4>
-                            <p><em>EUC Syd</em></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Career Journey</span>
-                <h2 class="section-title">Experience & Impact</h2>
-                <p class="section-subtitle">Where I've contributed, learned, and made a difference</p>
-            </div>
-            
-            <div class="experience-dual-columns">
-                <!-- Professional Work -->
-                <div class="work-section">
-                    <h3 class="work-section-title">Professional Work</h3>
-                    <div class="timeline-scroll-container">
-                        <div class="timeline compact">
-                            <div class="timeline-item">
-                                <div class="timeline-marker featured"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">April 2025 - Present</div>
-                                    <h4>AI Consultant</h4>
-                                    <p><em>Gejst Studio</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">March 2024 - Present</div>
-                                    <h4>IT Employee</h4>
-                                    <p><em>Aarhus University, Interacting Minds Center for Experimenting, Experiencing and Reflecting</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">February 2024 - Present</div>
-                                    <h4>Co-founder</h4>
-                                    <p><em>Startup project, turning anything into flashcards using LLMs</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2024</div>
-                                    <h4>Conference Staff</h4>
-                                    <p><em>Aarhus University, Research Unit for Robophilosophy and Integrative Social Robotics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">May 2023 - December 2023</div>
-                                    <h4>Research Assistant</h4>
-                                    <p><em>Aarhus University, Research Unit for Robophilosophy and Integrative Social Robotics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2023 - December 2023</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>Facilitated weekly classes in the course in Cognition and Communication, as well as doing exam supervision for student's exam projects</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2022 - December 2022</div>
-                                    <h4>Research Assistant</h4>
-                                    <p><em>Apart Research, AI-Safety Non-profit</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2022 - April 2023</div>
-                                    <h4>Community Manager</h4>
-                                    <p><em>Apart Research, AI-Safety Non-profit</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2022 - December 2022</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>Facilitated weekly classes in the course in Cognition and Communication, as well as doing exam supervision for student's exam projects</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2020 - August 2021</div>
-                                    <h4>Mentor</h4>
-                                    <p><em>MentorDanmark - teaching danish, english and mathematics</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2020 - June 2021</div>
-                                    <h4>Communications Assistant</h4>
-                                    <p><em>EUC Syd</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2020 - June 2021</div>
-                                    <h4>Teacher Assistant</h4>
-                                    <p><em>EUC Syd, Higher Technical Exam</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2020 - December 2020</div>
-                                    <h4>Substitute Teacher</h4>
-                                    <p><em>Aabenraa Friskole</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">August 2020 - December 2020</div>
-                                    <h4>Student Teacher in Mathematics</h4>
-                                    <p><em>SOSO Syd, providing evening classes for students with dyscalculia and other mathematical challenges</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">May 2017 - November 2018</div>
-                                    <h4>Customer Service and Payment</h4>
-                                    <p><em>Bylderup Bov Pizza & Grill</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">December 2016 - May 2017</div>
-                                    <h4>Customer Service and Payment</h4>
-                                    <p><em>Milano Pizza & Restaurant</em></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Experience -->
-                <div class="volunteer-section">
-                    <h3 class="work-section-title">Volunteer Experience</h3>
-                    <div class="timeline-scroll-container">
-                        <div class="timeline compact">
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">March 2022 - February 2024</div>
-                                    <h4>Chairperson</h4>
-                                    <p><em>For the student council for Cognitive Science and Linguistics at Aarhus University</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">February 2023 - October 2023</div>
-                                    <h4>Head Tutor</h4>
-                                    <p><em>Volunteering in being head of planning of the orientation week and cabin trip for the new Bachelor students of Cognitive Science 2023</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2022 - June 2023</div>
-                                    <h4>Mentor</h4>
-                                    <p><em>Volunteering for Aarhus University</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">April 2022 - October 2023</div>
-                                    <h4>Tutor</h4>
-                                    <p><em>Volunteering in being part of a team planning of the orientation week and cabin trip for the new Bachelor students of Cognitive Science 2022</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">September 2019 - January 2023</div>
-                                    <h4>Head of Marketing Communications</h4>
-                                    <p><em>Volunteering for Campusbyen Aabenraa</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">January 2019 - January 2023</div>
-                                    <h4>Youth Counselor</h4>
-                                    <p><em>Headspace Denmark, Aabenraa</em></p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">January 2018 - June 2020</div>
-                                    <h4>Member of the Management Board</h4>
-                                    <p><em>EUC Syd, student representative for Higher Technical Exam</em></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">My Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            
-            <div class="portfolio-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <img src="assets/images/botcon.png" alt="Chatbot Clairvoyant" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://botcon.ploomberapp.io/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">AI Research Tool</div>
-                        <h3>Chatbot Clairvoyant</h3>
-                        <p>LLM using RAG with vectorstore made for the "Experimenting, Experiencing, Reflecting" art–science research group implemented in Streamlit.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                            <span>RAG</span>
-                            <span>LLM</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/podmem.png" alt="Flashcard Generator" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://www.podmem.com/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-category">EdTech Startup</div>
-                        <h3>Flashcard Generator</h3>
-                        <p>Start-up developing an application for generating flashcards from anything. Demo YouTube to flashcards.</p>
-                        <div class="project-tech">
-                            <span>AI/ML</span>
-                            <span>NLP</span>
-                            <span>Web Dev</span>
-                            <span>Startup</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Work Together</h2>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Ready to collaborate?</h3>
-                    <p>I'm always interested in new opportunities, innovative projects, and meaningful conversations about the intersection of human cognition and AI.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:szhsabrina@gmail.com">szhsabrina@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/sabrinazakihansen" target="_blank">sabrinazakihansen</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/sabszh" target="_blank">sabszh</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formsubmit.co/8005be62d9b5293e84b5c257f5f64765" method="POST">
-                        <input type="hidden" name="_subject" value="New Portfolio Contact!">
-                        <input type="hidden" name="_captcha" value="false">
-                        
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Sabrina Zaki Hansen</h3>
-                    <p>Cognitive Scientist & AI Consultant</p>
-                </div>
-                
-                <div class="footer-social">
-                    <a href="https://linkedin.com/in/sabrinazakihansen" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/sabszh" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:szhsabrina@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sabrina Zaki Hansen. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="assets/js/scripts.js"></script>
+    <div class="cv-sections section-shell"><section class="cv-section"><div class="cv-section-heading"><h3>Experience.</h3><a class="text-link" href="https://www.linkedin.com/in/sabrinazakihansen" target="_blank" rel="noreferrer">Full profile on LinkedIn ↗</a></div><div class="cv-section-list"><div><span>2026—now</span><p><strong>PhD Student · Aarhus University</strong><small>Joint 4+4 PhD programme researching reflective friction, epistemic engagement and reliance in LLM-mediated knowledge work.</small></p></div><div><span>2026—now</span><p><strong>Human-AI Researcher · PhD Fellow · Gejst Studio</strong><small>Internship alongside the PhD, collecting empirical insights and data for the project.</small></p></div><div><span>2025—26</span><p><strong>AI Consultant · Gejst Studio</strong><small>Earlier experience working with the studio on AI-related questions, before moving into the PhD fellowship.</small></p></div><div><span>2025—now</span><p><strong>Group Facilitator · Aarhus University</strong><small>Facilitating peer-to-peer drop-in group meetings for students with diagnoses at the Department of Linguistics and Cognitive Science.</small></p></div><div><span>2024—25</span><p><strong>IT-medarbejder · EER, Aarhus University</strong><small>Building AI tools for Experimenting, Experiencing, Reflecting — an art–science collaboration led by Olafur Eliasson and Andreas Roepstorff.</small></p></div><div><span>2023—24</span><p><strong>Research Assistant · Robophilosophy & Social Robotics</strong><small>Research Unit for Robophilosophy and Integrative Social Robotics, Aarhus University.</small></p></div><div><span>2023</span><p><strong>Conference Staff · Aarhus University</strong><small>Supporting the Research Unit for Robophilosophy and Integrative Social Robotics.</small></p></div><div><span>2022</span><p><strong>Research Assistant · Apart Research</strong><small>Contributing to an AI-safety research community.</small></p></div><div><span>2023</span><p><strong>Teacher Assistant · Aarhus University</strong><small>Teaching Cognition and Communication for Bachelor students in Cognitive Science.</small></p></div><div><span>2023</span><p><strong>Head Tutor · Cognitive Science</strong><small>Planning orientation week and the cabin trip for new Bachelor students.</small></p></div><div><span>2022</span><p><strong>Teacher Assistant · Aarhus University</strong><small>Teaching Cognition and Communication for Bachelor students in Cognitive Science.</small></p></div><div><span>2020—21</span><p><strong>Communications Assistant · EUC Syd</strong></p></div><div><span>2020—21</span><p><strong>Teacher Assistant · EUC Syd</strong><small>Assisting teaching at the higher technical gymnasium and supporting students one-to-one.</small></p></div><div><span>2020</span><p><strong>Substitute Teacher · Aabenraa Friskole</strong></p></div><div><span>2020—21</span><p><strong>Mentor · MentorDanmark</strong></p></div><div><span>2017—18</span><p><strong>Student Teacher in Mathematics · SOSO Syd</strong><small>Providing evening classes for students with dyscalculia and other mathematical challenges.</small></p></div><div><span>2018—20</span><p><strong>Student Representative · EUC Syd</strong><small>Member of the management board for the Higher Technical Exam.</small></p></div></div></section><section class="cv-section"><h3>Education.</h3><div class="cv-section-list"><div><span>2024—27</span><p><strong>MSc Cognitive Science · Aarhus University</strong></p></div><div><span>2021—24</span><p><strong>BSc Cognitive Science · Aarhus University</strong></p></div><div><span>2017—20</span><p><strong>Technical Gymnasium · EUC Syd</strong></p></div></div></section><section class="cv-section"><h3>Community & voluntary work.</h3><div class="cv-section-list"><div><span>2023</span><p><strong>Head Tutor · Cognitive Science</strong><small>Voluntary student leadership: planning orientation activities and a cabin trip for incoming Bachelor students.</small></p></div><div><span>2025—now</span><p><strong>Peer group facilitator · Aarhus University</strong><small>Facilitating peer support and drop-in meetings for students with diagnoses.</small></p></div><div><span>2024—25</span><p><strong>Advisory Board Member · Aarhus Teater</strong><small>Contributing to conversations around art, culture and the city.</small></p></div><div><span>2019—24</span><p><strong>Volunteer · Headspace Denmark, Aabenraa</strong><small>Volunteering with a youth organisation focused on mental health and wellbeing.</small></p></div><div><span>2022—24</span><p><strong>Chairperson · Cognitive Science & Linguistics Student Council</strong><small>Planning meetings and study-related events, and acting as a link between students and the study community.</small></p></div><div><span>2022—23</span><p><strong>Tutor and Mentor · Aarhus University</strong><small>Supporting incoming students and helping plan orientation activities.</small></p></div><div><span>2019—23</span><p><strong>Head of Marketing Communications · Campusbyen Aabenraa</strong><small>Voluntary youth-community work focused on communication and local activities.</small></p></div></div></section></div>
+    <section id="slowdown" class="slowdown section-shell" aria-labelledby="slowdown-title"><div class="slowdown-heading"><h2 id="slowdown-title">Slowdown.</h2></div><div class="slowdown-copy"><p>Notes on human cognition, AI, pain, pace and the strange work of staying thoughtful in a fast-moving world.</p><a class="text-link" href="writing.html">Read the notes <span>↗</span></a></div></section>
+    <section id="contact" class="contact section-shell" aria-labelledby="contact-title"><div><h2 id="contact-title">Have a question,<br>an idea, or a <em>strange</em> problem?</h2></div><div class="contact-cta"><p>Curious too? Send me a note — I love being curious with other curious beings.</p><a class="button button-light" href="mailto:szhsabrina@gmail.com">szhsabrina@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/sabrinazakihansen" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/sabszh" target="_blank" rel="noreferrer">GitHub</a></div></div></section>
+  </main>
+  <footer class="site-footer section-shell"><span>© 2026 Sabrina Zaki Hansen</span><span class="mono-label">Built with curiosity</span><a href="#top">Back to top ↑</a></footer>
+  <div class="mobile-menu" id="mobile-menu"><a href="#work">Work</a><a href="#about">About</a><a href="#journey">Journey</a><a href="writing.html">Slowdown</a><a href="#contact">Contact</a></div>
+  <style>.about-personal{max-width:650px!important;margin-top:3rem!important;padding:2rem 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);color:var(--ink)!important;font-size:clamp(1.1rem,2vw,1.45rem)!important;line-height:1.35;letter-spacing:-.035em}.slowdown{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding-top:clamp(4rem,8vw,7rem);padding-bottom:clamp(4rem,8vw,7rem);border-bottom:1px solid var(--line);overflow:hidden}.slowdown:before{content:'';position:absolute;width:70%;height:180px;left:-8%;top:25%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 180'%3E%3Cpath d='M8 91C65 22 130 144 193 73c55-62 105 44 166-8 58-49 105 48 163 0 61-51 105 48 221-30' fill='none' stroke='%23ff765c' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M20 129c71-43 115 16 175-17 68-37 112 35 174-5 59-38 105 32 171-2 59-30 111 15 199-30' fill='none' stroke='%2398c8ff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;opacity:.45;pointer-events:none}.slowdown>*{position:relative;z-index:1}.slowdown h2{font-size:clamp(3rem,7vw,7rem);line-height:.9;letter-spacing:-.08em;margin:.7rem 0 0}.slowdown-copy{align-self:end;max-width:430px}.slowdown-copy p{font-size:clamp(1.1rem,2vw,1.5rem);letter-spacing:-.04em;margin:0 0 1.5rem}.slowdown-copy .text-link{display:inline-block}@media(max-width:760px){.slowdown{display:flex;flex-direction:column;gap:2rem}.slowdown-copy{align-self:stretch}.slowdown:before{width:130%;left:-25%}}
+  </style>
+  <style>.project-card--lime{background:var(--lime);color:var(--ink)}.project-card--ink{background:var(--ink);color:var(--white)}.project-card--coral{background:var(--coral);color:var(--ink)}.project-card--blue{background:var(--blue);color:var(--ink)}.art-switch{background:var(--lime)}.art-syntag{background:#252825}.art-bot{background:var(--coral)}.art-podmem{background:var(--blue)}.cv-section-list>div{background:transparent!important}.contact{background-image:none!important}.slowdown h2{margin-top:0}.about>*{z-index:2}.about:before,.about:after{z-index:0}@media(max-width:760px){.about-personal{padding:1.4rem 0;font-size:1.1rem!important}}
+  </style>
+  <style>.hero:before{display:none!important}.hero:after,.work:before,.work:after,.about:before,.about:after,.journey:before,.journey:after,.cv-sections:before,.cv-sections:after,.site-header:before,.site-header:after{border:0!important}.contact:before,.contact:after{background:none!important;opacity:0!important;border:0!important}.journey:before,.journey:after,.cv-sections:before,.cv-sections:after{background-color:transparent!important}.about{background-position:center 28%}.about-copy{background:var(--paper);padding:1rem 1rem 1rem 0}</style>
+  <style>.hero,.work,.about,.journey,.cv-sections,.contact{background-repeat:no-repeat}.hero{background-image:radial-gradient(circle at 6% 18%,rgba(216,244,94,.48) 0 110px,transparent 112px),radial-gradient(circle at 93% 12%,rgba(152,200,255,.42) 0 145px,transparent 147px),radial-gradient(circle at 78% 84%,rgba(255,118,92,.28) 0 90px,transparent 92px)}.hero:before,.hero:after{content:'';position:absolute;pointer-events:none;z-index:0}.hero:before{width:190px;height:190px;left:5%;top:30%;border:2px solid var(--coral);border-radius:42% 58% 55% 45%;transform:rotate(24deg);opacity:.8}.hero:after{width:120px;height:120px;left:45%;bottom:18%;background:var(--blue);opacity:.22;transform:rotate(45deg)}.hero>*{position:relative;z-index:1}.work{background-image:radial-gradient(ellipse at 88% 8%,rgba(216,244,94,.3) 0 150px,transparent 152px),radial-gradient(circle at 15% 92%,rgba(255,118,92,.24) 0 120px,transparent 122px),linear-gradient(112deg,transparent 0 64%,rgba(152,200,255,.17) 64% 68%,transparent 68%)}.about{background-image:radial-gradient(circle at 5% 76%,rgba(152,200,255,.3) 0 100px,transparent 102px),radial-gradient(ellipse at 96% 26%,rgba(255,118,92,.23) 0 135px,transparent 137px),linear-gradient(28deg,transparent 0 76%,rgba(216,244,94,.18) 76% 80%,transparent 80%)}.journey{background-image:radial-gradient(circle at 12% 14%,rgba(255,118,92,.24) 0 72px,transparent 74px),radial-gradient(ellipse at 78% 70%,rgba(216,244,94,.26) 0 170px,transparent 172px),linear-gradient(145deg,transparent 0 58%,rgba(152,200,255,.2) 58% 62%,transparent 62%)}.journey:before{width:420px;height:270px;right:-105px;top:110px;background:var(--lime);border:2px solid var(--ink);border-radius:48% 52% 42% 58%;transform:rotate(-18deg);opacity:.24}.journey:after{width:150px;height:150px;right:125px;top:320px;background:var(--coral);border:2px solid var(--ink);transform:rotate(28deg);opacity:.2}.cv-sections{background-image:radial-gradient(circle at 94% 8%,rgba(152,200,255,.3) 0 115px,transparent 117px),radial-gradient(ellipse at 4% 78%,rgba(216,244,94,.24) 0 150px,transparent 152px)}.cv-section-list>div:nth-child(3n+1){background:linear-gradient(90deg,rgba(216,244,94,.16),transparent 70%)}.cv-section-list>div:nth-child(3n+2){background:linear-gradient(90deg,rgba(152,200,255,.14),transparent 70%)}.cv-section-list>div:nth-child(3n){background:linear-gradient(90deg,rgba(255,118,92,.12),transparent 70%)}.contact{position:relative;overflow:hidden;background-color:var(--ink);background-image:radial-gradient(circle at 82% 18%,rgba(216,244,94,.32) 0 145px,transparent 147px),radial-gradient(ellipse at 12% 90%,rgba(255,118,92,.26) 0 180px,transparent 182px)}.contact:before,.contact:after{content:'';position:absolute;pointer-events:none}.contact:before{width:300px;height:180px;right:-80px;bottom:70px;border:2px solid var(--blue);border-radius:50%;transform:rotate(22deg);opacity:.7}.contact:after{width:105px;height:105px;left:48%;top:18%;background:var(--coral);opacity:.18;transform:rotate(45deg)}.contact>*{position:relative;z-index:1}@media(max-width:760px){.hero:before{left:-70px}.hero:after{left:75%;bottom:24%}.contact:after{left:70%}}</style>
+  <style>.site-header{overflow:hidden;background-image:radial-gradient(ellipse at 34% -30%,rgba(255,118,92,.2) 0 90px,transparent 92px),radial-gradient(circle at 66% 130%,rgba(216,244,94,.24) 0 70px,transparent 72px)}.site-header:before,.site-header:after{content:'';position:absolute;pointer-events:none;z-index:0}.site-header:before{width:150px;height:42px;left:24%;top:-12px;background:var(--blue);opacity:.28;border-radius:58% 42% 64% 36%;transform:rotate(-7deg)}.site-header:after{width:70px;height:52px;right:33%;bottom:-22px;background:var(--coral);opacity:.24;border-radius:37% 63% 45% 55%;transform:rotate(18deg)}.site-header>*{position:relative;z-index:1}.site-nav a:nth-child(1){transform:rotate(-2deg)}.site-nav a:nth-child(2){transform:rotate(3deg)}.site-nav a:nth-child(3){transform:rotate(-1deg)}.site-nav a:nth-child(4){transform:rotate(2deg)}.site-nav a{position:relative}.site-nav a:nth-child(2):after,.site-nav a:nth-child(4):after{content:'';position:absolute;width:9px;height:5px;right:-12px;top:-7px;border-radius:60% 40% 55% 45%;background:var(--lime);opacity:.7;transform:rotate(-18deg)}.site-nav a:nth-child(4):after{background:var(--coral);transform:rotate(22deg)}.work .section-heading,.about .about-copy,.journey .section-heading,.cv-sections,.contact .contact-cta{position:relative}.work .section-heading:before{content:'';position:absolute;width:120px;height:78px;right:12%;top:-24px;background:var(--coral);opacity:.16;border-radius:62% 38% 30% 70%;transform:rotate(17deg)}.about .about-copy:before{content:'';position:absolute;width:92px;height:125px;left:-70px;bottom:6%;background:var(--lime);opacity:.2;clip-path:polygon(18% 0,100% 14%,78% 100%,0 76%);transform:rotate(-23deg)}.journey .section-heading:after{content:'';position:absolute;width:75px;height:75px;right:28%;top:-20px;background:var(--blue);opacity:.2;border-radius:29% 71% 58% 42%;transform:rotate(31deg)}.cv-sections:after{content:'';position:absolute;width:130px;height:65px;left:-35px;top:40%;background:var(--coral);opacity:.12;border-radius:53% 47% 66% 34%;transform:rotate(-14deg)}.contact .contact-cta:before{content:'';position:absolute;width:105px;height:70px;right:-18px;top:-48px;background:var(--lime);opacity:.22;clip-path:polygon(10% 18%,82% 0,100% 68%,36% 100%,0 62%);transform:rotate(12deg)}@media(max-width:760px){.site-nav a:nth-child(n){transform:none}.site-header:before{left:12%}.site-header:after{right:22%}.work .section-heading:before{right:4%}.journey .section-heading:after{right:8%}.contact .contact-cta:before{right:6px}}</style>
+  <style>.hero,.work,.about,.journey,.cv-sections,.contact,.site-header{background-image:none}.hero:before{width:230px;height:175px;border:0;background:var(--coral);opacity:.2;clip-path:polygon(4% 28%,22% 8%,48% 14%,70% 3%,95% 24%,86% 52%,100% 78%,72% 91%,48% 82%,23% 100%,8% 76%);transform:rotate(-12deg)}.hero:after{width:155px;height:125px;background:var(--blue);opacity:.2;clip-path:polygon(16% 0,74% 13%,100% 43%,79% 67%,88% 100%,38% 85%,0 63%,15% 34%);transform:rotate(17deg)}.work:before{width:270px;height:185px;border-radius:0;clip-path:polygon(3% 26%,25% 5%,52% 17%,77% 0,100% 31%,86% 55%,94% 85%,60% 91%,35% 78%,8% 100%,15% 61%);transform:rotate(18deg)}.work:after{content:'';position:absolute;width:115px;height:160px;right:8%;top:30%;background:var(--lime);opacity:.13;clip-path:polygon(28% 0,82% 9%,100% 42%,73% 70%,84% 100%,35% 88%,0 56%,12% 22%);pointer-events:none}.about:before{border-radius:0;clip-path:polygon(0 23%,25% 7%,50% 18%,72% 0,100% 30%,84% 57%,96% 86%,57% 100%,28% 82%,4% 93%);transform:rotate(-19deg)}.about:after{content:'';position:absolute;width:145px;height:105px;left:42%;bottom:8%;background:var(--blue);opacity:.14;clip-path:polygon(7% 31%,28% 4%,58% 16%,94% 0,100% 48%,77% 77%,52% 100%,22% 85%,0 59%);pointer-events:none}.journey:before{border-radius:0;clip-path:polygon(2% 32%,19% 9%,44% 17%,65% 0,96% 20%,86% 48%,100% 76%,69% 88%,47% 79%,21% 100%,8% 71%);transform:rotate(-13deg)}.journey:after{border-radius:0;clip-path:polygon(13% 0,76% 8%,100% 39%,81% 67%,91% 100%,38% 85%,0 63%,18% 29%);transform:rotate(21deg)}.cv-sections:before{content:'';position:absolute;width:160px;height:115px;right:5%;top:52%;background:var(--coral);opacity:.12;clip-path:polygon(0 28%,26% 3%,54% 15%,83% 0,100% 35%,84% 63%,91% 100%,48% 88%,19% 100%,7% 65%);pointer-events:none}.contact{background-color:var(--ink)}.contact:before{border-radius:0;clip-path:polygon(4% 28%,24% 5%,53% 17%,77% 0,100% 31%,86% 57%,96% 89%,60% 100%,32% 84%,0 72%);transform:rotate(16deg)}.contact:after{clip-path:polygon(10% 24%,34% 0,67% 12%,100% 38%,78% 67%,87% 100%,42% 86%,0 61%);transform:rotate(-19deg)}.site-header:before{border-radius:0;clip-path:polygon(0 28%,24% 0,55% 15%,100% 4%,83% 62%,53% 100%,18% 82%)}.site-header:after{border-radius:0;clip-path:polygon(8% 21%,42% 0,100% 28%,78% 73%,38% 100%,0 62%)}@media(max-width:760px){.work:after{right:-15%;top:34%}.about:after{left:65%}.cv-sections:before{right:-30px}.hero:before{left:-40px}}</style>
+  <style>.hero,.work,.about,.journey,.cv-sections,.contact,.site-header{background-image:none}.hero:before,.hero:after,.work:before,.work:after,.about:before,.about:after,.journey:before,.journey:after,.cv-sections:before,.contact:before,.contact:after,.site-header:before,.site-header:after{border-radius:0;background-color:transparent;clip-path:none}.hero:before{content:'';position:absolute;display:block;width:520px;height:275px;left:0;top:25%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 275'%3E%3Cpath d='M18 154C46 70 115 20 214 35c84 13 143-19 218 21 60 32 63 116-9 157-67 38-135 9-205 29-79 22-166 3-200-40Z' fill='none' stroke='%23ff765c' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M39 170C91 96 145 78 225 88c75 10 126-20 190 8' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.8;z-index:0}.hero:after{content:'';position:absolute;display:block;width:330px;height:230px;left:38%;bottom:12%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 230'%3E%3Cpath d='M10 126c35-69 70-84 113-49 41 34 70 37 104 4 37-36 89-5 91 44 2 46-41 74-88 55-39-16-67-3-95 24-37 35-95 18-104-27-4-19-13-35-21-51Z' fill='none' stroke='%2398c8ff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M28 144c38-42 65-50 99-22 32 26 62 35 96 7 36-30 67-12 87 11' fill='none' stroke='%23d8f45e' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.65;z-index:0}.work{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 420'%3E%3Cpath d='M30 98c72-58 108 31 176-4 65-34 97-80 163-35 66 44 104 25 170-10 58-31 110 15 157 2 66-19 125 12 174 61' fill='none' stroke='%23d8f45e' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M-10 300c72-70 145-20 208 7 76 33 105-63 180-50 77 13 102 87 183 46 74-38 111-9 183 27 50 24 93 15 146-25' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M180 0c-24 74 37 84 18 139-21 59 40 76 22 141-17 58 31 88 12 140' fill='none' stroke='%2398c8ff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 48%;background-position:center top;background-repeat:no-repeat}.about{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 360'%3E%3Cpath d='M20 82c64 35 104-38 169-2 55 31 73 73 137 37 57-32 88-13 122 24 31 33 78 33 118-4 39-37 83-20 114 12 31 31 54 32 100 0' fill='none' stroke='%2398c8ff' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M80 285c47-50 75-35 119-6 48 32 81 29 121-11 43-44 77-26 115 12 38 38 75 33 115-4 40-37 83-17 170 29' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 55%;background-position:center 15%;background-repeat:no-repeat}.journey{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 560'%3E%3Cpath d='M-20 155c74-54 125-27 183 14 66 47 107 28 159-18 55-49 100-48 149 4 48 50 87 55 149 5 58-47 117-19 159 22 39 38 74 40 138-5' fill='none' stroke='%23d8f45e' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M-10 365c59-45 110-41 157 4 54 51 99 52 156 7 57-45 104-51 159-6 62 51 111 37 166-12 55-49 101-29 145 14 42 41 80 35 137-10' fill='none' stroke='%2398c8ff' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M50 510c50-34 89-16 125 8 51 34 86 26 126-16 40-42 75-39 119 1 46 42 83 34 122-9 42-46 88-31 137 4' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 78%;background-position:center bottom;background-repeat:no-repeat}.cv-sections{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 620'%3E%3Cpath d='M-15 90c89 48 126-31 201 6 69 34 99 66 161 18 62-48 114-36 166 15 50 49 99 49 158 0 59-50 117-37 164 6 43 40 84 40 145-7' fill='none' stroke='%23ff765c' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M-15 310c87-51 143-28 202 18 66 51 105 35 162-11 58-47 110-42 163 9 50 49 93 57 151 10 55-45 116-35 166 11 48 43 89 38 153-5' fill='none' stroke='%23d8f45e' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M-8 540c81-49 135-22 191 22 66 52 115 34 171-14 54-46 104-40 153 7 52 50 101 51 157 3 55-47 112-38 169 8 43 35 86 28 150-12' fill='none' stroke='%2398c8ff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 72%;background-position:center center;background-repeat:no-repeat}.contact{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 360'%3E%3Cpath d='M-10 93c75-55 118-31 179 11 66 45 105 38 164-8 59-46 101-31 151 19 47 47 93 44 149-1 59-48 111-31 151 10 40 41 76 37 140-7' fill='none' stroke='%23d8f45e' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M5 282c66-49 110-24 166 12 61 39 105 36 160-8 55-45 98-38 148 8 52 48 95 43 148-3 55-48 109-25 155 14 40 34 82 29 130-6' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 70%;background-position:center top;background-repeat:no-repeat}.site-header{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 76'%3E%3Cpath d='M230 8c34 20 63-17 94 1 29 17 44 22 72 1 30-22 55-8 76 10 21 17 45 16 70-3' fill='none' stroke='%23d8f45e' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M630 69c27-20 50-12 72 1 25 14 47 8 70-8 22-15 44-8 62 7' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 100%;background-repeat:no-repeat}.hero>*{position:relative;z-index:1}@media(max-width:760px){.hero:before{width:360px;height:210px;left:-40px;top:30%}.hero:after{left:45%;bottom:14%;width:230px}.work,.about,.journey,.cv-sections,.contact{background-size:180% 55%}}</style>
+  <style>.hero:before{width:540px;height:300px;left:-8px;top:22%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 300'%3E%3Cpath d='M40 150C28 76 116 28 218 48c91-31 218-11 267 58 51 72-29 148-132 145-91-3-145 28-238-4C57 222 46 190 40 150Z' fill='none' stroke='%23ff765c' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M61 153C64 93 137 65 216 78c76-25 178-10 218 36 41 47-15 96-95 98-80 1-125 22-197-2-46-16-79-28-81-57Z' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.78}.hero:after{width:360px;height:250px;left:40%;bottom:9%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 250'%3E%3Cpath d='M25 137C5 81 67 41 126 62c52-30 139-12 169 34 34 51-8 109-73 105-59-4-87 31-143 15-43-13-42-46-54-79Z' fill='none' stroke='%2398c8ff' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M48 137c1-39 48-51 82-31 35-22 94-14 113 16 20 32-9 67-51 64-42-3-64 17-99 8-30-8-46-29-45-57Z' fill='none' stroke='%23d8f45e' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.68}.site-header{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 76'%3E%3Cpath d='M190 11c35 30 68-11 103 8 29 16 54 25 83 3 32-25 69-6 92 12 25 20 48 17 78-7' fill='none' stroke='%23d8f45e' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M660 68c31-27 58-14 79 2 28 21 58 9 78-10 24-23 55-13 76 8' fill='none' stroke='%23ff765c' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-size:100% 100%;background-repeat:no-repeat}.work .section-heading:after,.journey .section-heading:after{content:'';position:absolute;pointer-events:none;width:190px;height:90px;right:4%;top:-18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 90'%3E%3Cpath d='M11 48C18 15 55 8 82 27c24-18 67-12 85 10 19 24-4 47-34 41-28-5-48 9-72 1-31-10-57-4-50-31Z' fill='none' stroke='%23ff765c' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M33 48c8-17 29-18 45-7 17-11 42-7 51 7 10 15-4 27-22 24-18-3-30 4-45 0-18-5-34-8-29-24Z' fill='none' stroke='%2398c8ff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.72}.journey .section-heading:after{right:18%;top:-26px;transform:rotate(12deg)}.about .about-copy:after{content:'';position:absolute;width:150px;height:115px;left:72%;bottom:2%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 115'%3E%3Cpath d='M10 62C1 28 37 8 67 25c29-20 68-6 73 22 6 32-28 50-55 40-27-10-43 18-66 5-14-8-7-19-9-30Z' fill='none' stroke='%23d8f45e' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.65;pointer-events:none}.cv-sections:after{width:220px;height:100px;right:2%;left:auto;top:12%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 100'%3E%3Cpath d='M12 57C7 20 52 5 85 26c33-27 92-13 111 18 20 33-13 60-49 47-33-12-58 8-89 2-30-6-43-17-46-36Z' fill='none' stroke='%2398c8ff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.55}.contact:before{width:340px;height:190px;right:-100px;bottom:55px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 190'%3E%3Cpath d='M14 112C0 56 65 18 116 47c57-39 148-15 185 31 39 49-7 102-72 87-61-14-103 13-157-2-39-11-51-28-58-51Z' fill='none' stroke='%23d8f45e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;border:0;opacity:.7}.contact:after{width:160px;height:110px;left:42%;top:15%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 110'%3E%3Cpath d='M9 59C3 28 36 8 62 25c26-22 72-10 84 17 13 29-15 52-43 43-30-10-42 16-67 6-16-6-24-17-27-32Z' fill='none' stroke='%23ff765c' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat;clip-path:none;opacity:.55}.hero>*{position:relative;z-index:1}@media(max-width:760px){.hero:before{width:390px;left:-45px}.hero:after{left:38%;width:250px}.work .section-heading:after,.journey .section-heading:after{right:-8%}.about .about-copy:after{left:60%}.cv-sections:after{right:-70px}.contact:after{left:62%}}</style>
+  <script src="assets/js/scripts.js?rev=29"></script>
 </body>
 </html>
