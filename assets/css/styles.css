@@ -5,3 +5,4 @@
 .section-shell{max-width:none;width:100%}
 .writing:before{width:100vw;right:0}
 .contact .contact-cta:before{display:none!important}
+html,body{max-width:100%;overflow-x:hidden}
